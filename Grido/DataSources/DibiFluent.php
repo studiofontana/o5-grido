@@ -24,8 +24,10 @@ namespace Grido\DataSources;
  * @property-read int $count
  * @property-read array $data
  */
-class DibiFluent extends \Nette\Object implements IDataSource
+class DibiFluent  implements IDataSource
 {
+    use Nette\SmartObject;
+
     /** @var \DibiFluent */
     protected $fluent;
 

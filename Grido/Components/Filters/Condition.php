@@ -23,8 +23,10 @@ namespace Grido\Components\Filters;
  * @property-write array $condition
  * @property-write array $value
  */
-class Condition extends \Nette\Object
+class Condition
 {
+    use Nette\SmartObject;
+
     const OPERATOR_OR = 'OR';
     const OPERATOR_AND = 'AND';
 

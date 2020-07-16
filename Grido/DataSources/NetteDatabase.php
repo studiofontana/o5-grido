@@ -22,8 +22,10 @@ namespace Grido\DataSources;
  * @property-read int $count
  * @property-read array $data
  */
-class NetteDatabase extends \Nette\Object implements IDataSource
+class NetteDatabase  implements IDataSource
 {
+    use Nette\SmartObject;
+
     /** @var \Nette\Database\Table\Selection */
     protected $selection;
 

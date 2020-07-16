@@ -24,8 +24,11 @@ use Grido\Components\Filters\Condition;
  * @property-read array $data
  * @property-read int $count
  */
-class ArraySource extends \Nette\Object implements IDataSource
+class ArraySource  implements IDataSource
 {
+
+    use Nette\SmartObject;
+
     /** @var array */
     protected $data;
 

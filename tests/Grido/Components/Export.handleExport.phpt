@@ -15,8 +15,10 @@ use Tester\Assert,
 require_once __DIR__ . '/../bootstrap.php';
 require_once __DIR__ . '/../Helper.inc.php';
 
-class Response extends \Nette\Object implements \Nette\Http\IResponse
+class Response implements \Nette\Http\IResponse
 {
+    use Nette\SmartObject;
+
     public static $headers = array();
 
     function setHeader($name, $value)
